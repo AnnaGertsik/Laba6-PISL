@@ -32,7 +32,7 @@ public class DBConnection {
             resultSet = preparedStatement.executeQuery(findAll);
 
             while (resultSet.next()) {
-                int id = resultSet.getInt(1);
+                String id = resultSet.getString(1);
                 String q = resultSet.getString(2);
                 String w = resultSet.getString(3);
                 String e = resultSet.getString(4);

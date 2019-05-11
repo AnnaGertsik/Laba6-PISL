@@ -1,14 +1,14 @@
 package com.example.sarafan;
 
 public class People {
-    private int id;
+    private String id;
     private String surname;
     private String name;
     private String secondName;
     private String fateOfBirth;
     private String gender;
 
-    public People(int id, String q, String w, String e, String r, String t) {
+    public People(String id, String q, String w, String e, String r, String t) {
         this.id = id;
         this.secondName =e;
         this.surname = q;
@@ -17,11 +17,11 @@ public class People {
         this.gender = t;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
